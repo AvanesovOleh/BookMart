@@ -1,0 +1,89 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: oleh_avanesov
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  value: 1
+              - column:
+                  name: email
+                  value: bob@example.com
+              - column:
+                  name: password
+                  value: "$2a$12$sD0TdJA7QCPWt4UC2qBN8uTe8qftclSa5Aphzy3HQEXUIG6BUsABG"    #1234
+              - column:
+                  name: first_name
+                  value: Bob
+              - column:
+                  name: last_name
+                  value: Smith
+              - column:
+                  name: shipping_address
+                  value: "123 Main St, City"
+              - column:
+                  name: is_deleted
+                  value: 0
+
+
+  - changeSet:
+      id: 2
+      author: oleh_avanesov
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  value: 2
+              - column:
+                  name: email
+                  value: alice@example.com
+              - column:
+                  name: password
+                  value: "$2a$12$sD0TdJA7QCPWt4UC2qBN8uTe8qftclSa5Aphzy3HQEXUIG6BUsABG"    #1234
+              - column:
+                  name: first_name
+                  value: Alice
+              - column:
+                  name: last_name
+                  value: Alison
+              - column:
+                  name: shipping_address
+                  value: "234 Main St, City"
+              - column:
+                  name: is_deleted
+                  value: 0
+
+
+  - changeSet:
+      id: 3
+      author: oleh_avanesov
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  value: 3
+              - column:
+                  name: email
+                  value: john@example.com
+              - column:
+                  name: password
+                  value: "$2a$12$sD0TdJA7QCPWt4UC2qBN8uTe8qftclSa5Aphzy3HQEXUIG6BUsABG"  #1234
+              - column:
+                  name: first_name
+                  value: John
+              - column:
+                  name: last_name
+                  value: Johnson
+              - column:
+                  name: shipping_address
+                  value: "345 Main St, City"
+              - column:
+                  name: is_deleted
+                  value: 0
