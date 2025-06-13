@@ -1,6 +1,6 @@
-# Online-Book-Store
+# BookMart
 
-The Online Book Store application is a platform for buying and selling books in the Internet.
+The BookMart application is a platform for buying and selling books in the Internet.
 
 ### **KEY TECHNOLOGIES:**
 - Java 17
